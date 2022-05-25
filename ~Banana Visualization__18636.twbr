@@ -1,0 +1,1248 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0420.1112                               -->
+<workbook source-build='2021.1.1 (20211.21.0420.1112)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='split (banana_ds)' inline='true' name='federated.1hr3o9w0mbsi5g15p7n5c1fxckql' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='BigQuery' name='bigquery.1corf5m1brfppt10pmilt1wpfutf'>
+            <connection CATALOG='luminous-lodge-313616' EXECCATALOG='luminous-lodge-313616' authentication='yes' bq-dataset-fetch-rows='' bq-fetch-rows='' bq-fetch-tasks='' bq-large-fetch-rows='' bq-project-fetch-rows='' bq-response-rows='' class='bigquery' connection-dialect='google-sql' project='My First Project' schema='banana_ds' server='' server-oauth='' username='n.g.keeley2@gmail.com' />
+          </named-connection>
+          <named-connection caption='weather' name='textscan.0sgnjmh1u35tjr1ckc1sf02y057e'>
+            <connection class='textscan' directory='C:/Users/ngkee/Downloads' filename='weather.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='bigquery.1corf5m1brfppt10pmilt1wpfutf' name='split' table='[luminous-lodge-313616.banana_ds].[split]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='bigquery.1corf5m1brfppt10pmilt1wpfutf' name='split' table='[luminous-lodge-313616.banana_ds].[split]' type='table' />
+          <relation connection='textscan.0sgnjmh1u35tjr1ckc1sf02y057e' name='weather.csv' table='[weather#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='integer' name='Max TemperatureF' ordinal='1' />
+              <column datatype='integer' name='Mean TemperatureF' ordinal='2' />
+              <column datatype='integer' name='Min TemperatureF' ordinal='3' />
+              <column datatype='integer' name='Max Dew PointF' ordinal='4' />
+              <column datatype='integer' name='MeanDew PointF' ordinal='5' />
+              <column datatype='integer' name='Min DewpointF' ordinal='6' />
+              <column datatype='integer' name='Max Humidity' ordinal='7' />
+              <column datatype='integer' name='Mean Humidity' ordinal='8' />
+              <column datatype='integer' name='Min Humidity' ordinal='9' />
+              <column datatype='real' name='Max Sea Level PressureIn' ordinal='10' />
+              <column datatype='real' name='Mean Sea Level PressureIn' ordinal='11' />
+              <column datatype='real' name='Min Sea Level PressureIn' ordinal='12' />
+              <column datatype='integer' name='Max VisibilityMiles' ordinal='13' />
+              <column datatype='integer' name='Mean VisibilityMiles' ordinal='14' />
+              <column datatype='integer' name='Min VisibilityMiles' ordinal='15' />
+              <column datatype='integer' name='Max Wind SpeedMPH' ordinal='16' />
+              <column datatype='integer' name='Mean Wind SpeedMPH' ordinal='17' />
+              <column datatype='real' name='Max Gust SpeedMPH' ordinal='18' />
+              <column datatype='real' name='PrecipitationIn' ordinal='19' />
+              <column datatype='integer' name='Event' ordinal='20' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Date (weather.csv)]' value='[weather.csv].[Date]' />
+          <map key='[Date]' value='[split].[Date]' />
+          <map key='[Event]' value='[weather.csv].[Event]' />
+          <map key='[Jams]' value='[split].[Jams]' />
+          <map key='[Max Dew PointF]' value='[weather.csv].[Max Dew PointF]' />
+          <map key='[Max Gust SpeedMPH]' value='[weather.csv].[Max Gust SpeedMPH]' />
+          <map key='[Max Humidity]' value='[weather.csv].[Max Humidity]' />
+          <map key='[Max Sea Level PressureIn]' value='[weather.csv].[Max Sea Level PressureIn]' />
+          <map key='[Max TemperatureF]' value='[weather.csv].[Max TemperatureF]' />
+          <map key='[Max VisibilityMiles]' value='[weather.csv].[Max VisibilityMiles]' />
+          <map key='[Max Wind SpeedMPH]' value='[weather.csv].[Max Wind SpeedMPH]' />
+          <map key='[Mean Humidity]' value='[weather.csv].[Mean Humidity]' />
+          <map key='[Mean Sea Level PressureIn]' value='[weather.csv].[Mean Sea Level PressureIn]' />
+          <map key='[Mean TemperatureF]' value='[weather.csv].[Mean TemperatureF]' />
+          <map key='[Mean VisibilityMiles]' value='[weather.csv].[Mean VisibilityMiles]' />
+          <map key='[Mean Wind SpeedMPH]' value='[weather.csv].[Mean Wind SpeedMPH]' />
+          <map key='[MeanDew PointF]' value='[weather.csv].[MeanDew PointF]' />
+          <map key='[Min DewpointF]' value='[weather.csv].[Min DewpointF]' />
+          <map key='[Min Humidity]' value='[weather.csv].[Min Humidity]' />
+          <map key='[Min Sea Level PressureIn]' value='[weather.csv].[Min Sea Level PressureIn]' />
+          <map key='[Min TemperatureF]' value='[weather.csv].[Min TemperatureF]' />
+          <map key='[Min VisibilityMiles]' value='[weather.csv].[Min VisibilityMiles]' />
+          <map key='[PrecipitationIn]' value='[weather.csv].[PrecipitationIn]' />
+          <map key='[Sales]' value='[split].[Sales]' />
+          <map key='[Salesadj]' value='[split].[Salesadj]' />
+          <map key='[Salesimp]' value='[split].[Salesimp]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[split]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[split_D341A38C41EC4CC59AC343E3A06E29EB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[split]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[split_D341A38C41EC4CC59AC343E3A06E29EB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Salesimp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Salesimp]</local-name>
+            <parent-name>[split]</parent-name>
+            <remote-alias>Salesimp</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[split_D341A38C41EC4CC59AC343E3A06E29EB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Jams</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Jams]</local-name>
+            <parent-name>[split]</parent-name>
+            <remote-alias>Jams</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[split_D341A38C41EC4CC59AC343E3A06E29EB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Salesadj</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Salesadj]</local-name>
+            <parent-name>[split]</parent-name>
+            <remote-alias>Salesadj</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[split_D341A38C41EC4CC59AC343E3A06E29EB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date (weather.csv)]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_08948C15E6494AD8B21CF067E392F073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max TemperatureF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max TemperatureF]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Max TemperatureF</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_08948C15E6494AD8B21CF067E392F073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mean TemperatureF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mean TemperatureF]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Mean TemperatureF</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_08948C15E6494AD8B21CF067E392F073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Min TemperatureF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Min TemperatureF]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Min TemperatureF</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_08948C15E6494AD8B21CF067E392F073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max Dew PointF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max Dew PointF]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Max Dew PointF</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_08948C15E6494AD8B21CF067E392F073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MeanDew PointF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MeanDew PointF]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>MeanDew PointF</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_08948C15E6494AD8B21CF067E392F073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Min DewpointF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Min DewpointF]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Min DewpointF</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_08948C15E6494AD8B21CF067E392F073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max Humidity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max Humidity]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Max Humidity</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_08948C15E6494AD8B21CF067E392F073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mean Humidity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mean Humidity]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Mean Humidity</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_08948C15E6494AD8B21CF067E392F073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Min Humidity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Min Humidity]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Min Humidity</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_08948C15E6494AD8B21CF067E392F073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max Sea Level PressureIn</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Max Sea Level PressureIn]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Max Sea Level PressureIn</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_08948C15E6494AD8B21CF067E392F073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mean Sea Level PressureIn</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mean Sea Level PressureIn]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Mean Sea Level PressureIn</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_08948C15E6494AD8B21CF067E392F073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Min Sea Level PressureIn</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Min Sea Level PressureIn]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Min Sea Level PressureIn</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_08948C15E6494AD8B21CF067E392F073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max VisibilityMiles</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max VisibilityMiles]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Max VisibilityMiles</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_08948C15E6494AD8B21CF067E392F073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mean VisibilityMiles</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mean VisibilityMiles]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Mean VisibilityMiles</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_08948C15E6494AD8B21CF067E392F073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Min VisibilityMiles</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Min VisibilityMiles]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Min VisibilityMiles</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_08948C15E6494AD8B21CF067E392F073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max Wind SpeedMPH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max Wind SpeedMPH]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Max Wind SpeedMPH</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_08948C15E6494AD8B21CF067E392F073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mean Wind SpeedMPH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mean Wind SpeedMPH]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Mean Wind SpeedMPH</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_08948C15E6494AD8B21CF067E392F073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max Gust SpeedMPH</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Max Gust SpeedMPH]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Max Gust SpeedMPH</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_08948C15E6494AD8B21CF067E392F073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PrecipitationIn</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PrecipitationIn]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>PrecipitationIn</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_08948C15E6494AD8B21CF067E392F073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Event</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Event]</local-name>
+            <parent-name>[weather.csv]</parent-name>
+            <remote-alias>Event</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weather.csv_08948C15E6494AD8B21CF067E392F073]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <column caption='Precipitation In' datatype='real' name='[PrecipitationIn]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='split' datatype='table' name='[__tableau_internal_object_id__].[split_D341A38C41EC4CC59AC343E3A06E29EB]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='weather.csv' datatype='table' name='[__tableau_internal_object_id__].[weather.csv_08948C15E6494AD8B21CF067E392F073]' role='measure' type='quantitative' />
+      <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[yr:Date:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>2008</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>2012</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>2011</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>2014</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2010</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>2013</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2009</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[mn:Date:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>4</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='split' id='split_D341A38C41EC4CC59AC343E3A06E29EB'>
+            <properties context=''>
+              <relation connection='bigquery.1corf5m1brfppt10pmilt1wpfutf' name='split' table='[luminous-lodge-313616.banana_ds].[split]' type='table' />
+            </properties>
+          </object>
+          <object caption='weather.csv' id='weather.csv_08948C15E6494AD8B21CF067E392F073'>
+            <properties context=''>
+              <relation connection='textscan.0sgnjmh1u35tjr1ckc1sf02y057e' name='weather.csv' table='[weather#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='integer' name='Max TemperatureF' ordinal='1' />
+                  <column datatype='integer' name='Mean TemperatureF' ordinal='2' />
+                  <column datatype='integer' name='Min TemperatureF' ordinal='3' />
+                  <column datatype='integer' name='Max Dew PointF' ordinal='4' />
+                  <column datatype='integer' name='MeanDew PointF' ordinal='5' />
+                  <column datatype='integer' name='Min DewpointF' ordinal='6' />
+                  <column datatype='integer' name='Max Humidity' ordinal='7' />
+                  <column datatype='integer' name='Mean Humidity' ordinal='8' />
+                  <column datatype='integer' name='Min Humidity' ordinal='9' />
+                  <column datatype='real' name='Max Sea Level PressureIn' ordinal='10' />
+                  <column datatype='real' name='Mean Sea Level PressureIn' ordinal='11' />
+                  <column datatype='real' name='Min Sea Level PressureIn' ordinal='12' />
+                  <column datatype='integer' name='Max VisibilityMiles' ordinal='13' />
+                  <column datatype='integer' name='Mean VisibilityMiles' ordinal='14' />
+                  <column datatype='integer' name='Min VisibilityMiles' ordinal='15' />
+                  <column datatype='integer' name='Max Wind SpeedMPH' ordinal='16' />
+                  <column datatype='integer' name='Mean Wind SpeedMPH' ordinal='17' />
+                  <column datatype='real' name='Max Gust SpeedMPH' ordinal='18' />
+                  <column datatype='real' name='PrecipitationIn' ordinal='19' />
+                  <column datatype='integer' name='Event' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Date]' />
+              <expression op='[Date (weather.csv)]' />
+            </expression>
+            <first-end-point object-id='split_D341A38C41EC4CC59AC343E3A06E29EB' />
+            <second-end-point object-id='weather.csv_08948C15E6494AD8B21CF067E392F073' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1hr3o9w0mbsi5g15p7n5c1fxckql'>
+      <datasources>
+        <datasource caption='split (banana_ds)' name='federated.1hr3o9w0mbsi5g15p7n5c1fxckql' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1hr3o9w0mbsi5g15p7n5c1fxckql'>
+        <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+        <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[yr:Date:ok]'>
+        <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[yr:Date:ok]' member='2011' />
+          <groupfilter function='member' level='[yr:Date:ok]' member='2012' />
+          <groupfilter function='member' level='[yr:Date:ok]' member='2013' />
+        </groupfilter>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_4C1A924E897743E1B4883B9803D4B755]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sals vs. Year/Mo.' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Avg. Sales vs. Day'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='split (banana_ds)' name='federated.1hr3o9w0mbsi5g15p7n5c1fxckql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hr3o9w0mbsi5g15p7n5c1fxckql'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Salesadj]' role='measure' type='quantitative' />
+            <column-instance column='[Salesadj]' derivation='Avg' name='[avg:Salesadj:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Weekday' name='[wd:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[yr:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[avg:Salesadj:qk]</rows>
+        <cols>[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[wd:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{17AEBF5C-E584-48FB-BB25-8585BE69A410}' />
+    </worksheet>
+    <worksheet name='Avg. Sales vs. Month'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='split (banana_ds)' name='federated.1hr3o9w0mbsi5g15p7n5c1fxckql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hr3o9w0mbsi5g15p7n5c1fxckql'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Salesadj]' role='measure' type='quantitative' />
+            <column-instance column='[Salesadj]' derivation='Avg' name='[avg:Salesadj:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[yr:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='427' />
+                <format attr='maxheight' value='427' />
+                <format attr='minwidth' value='240' />
+                <format attr='maxwidth' value='240' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[avg:Salesadj:qk]</rows>
+        <cols>[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[mn:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{536541D9-52B9-4DBD-B73E-0D2A1A0AF63E}' />
+    </worksheet>
+    <worksheet name='Holiday Search'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='split (banana_ds)' name='federated.1hr3o9w0mbsi5g15p7n5c1fxckql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hr3o9w0mbsi5g15p7n5c1fxckql'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Salesadj]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Salesadj]' derivation='None' name='[none:Salesadj:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Day-Trunc' name='[tdy:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year-Trunc' name='[tyr:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[tyr:Date:qk]' included-values='in-range'>
+            <min>#2010-01-01 00:00:00#</min>
+            <max>#2010-12-31 00:00:00#</max>
+          </filter>
+          <slices>
+            <column>[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[tyr:Date:qk]</column>
+            <column>[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[yr:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <reference-line axis-column='[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[none:Salesadj:qk]' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[none:Salesadj:qk]' z-order='1' />
+            <reference-line axis-column='[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[none:Salesadj:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline2' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[none:Salesadj:qk]' z-order='2' />
+          </pane>
+        </panes>
+        <rows>[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[none:Salesadj:qk]</rows>
+        <cols>([federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[mn:Date:ok] * [federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[tdy:Date:qk])</cols>
+      </table>
+      <simple-id uuid='{19D68A16-4A55-4EE9-9C87-05D8995D9DF9}' />
+    </worksheet>
+    <worksheet name='Jam'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>When is Staunton Jam?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='split (banana_ds)' name='federated.1hr3o9w0mbsi5g15p7n5c1fxckql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hr3o9w0mbsi5g15p7n5c1fxckql'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Jams]' role='measure' type='quantitative' />
+            <column-instance column='[Jams]' derivation='None' name='[none:Jams:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Weekday' name='[wd:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[yr:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+          </pane>
+        </panes>
+        <rows>[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[none:Jams:qk]</rows>
+        <cols>[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[wd:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{C9FF6B41-90D9-4D53-AD2B-B126A5478844}' />
+    </worksheet>
+    <worksheet name='Sales vs. Weekdays by Month'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Avg. Sales vs. Weekdays by Month</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='split (banana_ds)' name='federated.1hr3o9w0mbsi5g15p7n5c1fxckql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hr3o9w0mbsi5g15p7n5c1fxckql'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Salesadj]' role='measure' type='quantitative' />
+            <column-instance column='[Salesadj]' derivation='Avg' name='[avg:Salesadj:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Weekday' name='[wd:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[mn:Date:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[mn:Date:ok]' member='4' />
+              <groupfilter function='member' level='[mn:Date:ok]' member='5' />
+              <groupfilter function='member' level='[mn:Date:ok]' member='6' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[mn:Date:ok]</column>
+            <column>[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[yr:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[mn:Date:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[avg:Salesadj:qk]</rows>
+        <cols>[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[wd:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{5C2236B8-0AD3-4547-A20D-106D7B27040E}' />
+    </worksheet>
+    <worksheet name='Sals vs. Year/Mo.'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Avg. Sales vs. Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='split (banana_ds)' name='federated.1hr3o9w0mbsi5g15p7n5c1fxckql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hr3o9w0mbsi5g15p7n5c1fxckql'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Salesadj]' role='measure' type='quantitative' />
+            <column-instance column='[Salesadj]' derivation='Avg' name='[avg:Salesadj:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[yr:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[yr:Date:ok]' />
+              <lod column='[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[avg:Salesadj:qk]</rows>
+        <cols>([federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[:Measure Names] / [federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[mn:Date:ok])</cols>
+      </table>
+      <simple-id uuid='{F5A8B662-DA67-4EE6-A051-B1A13C060552}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='split (banana_ds)' name='federated.1hr3o9w0mbsi5g15p7n5c1fxckql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hr3o9w0mbsi5g15p7n5c1fxckql'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Mean TemperatureF]' role='measure' type='quantitative' />
+            <column caption='Precipitation In' datatype='real' name='[PrecipitationIn]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Salesadj]' role='measure' type='quantitative' />
+            <column-instance column='[Salesadj]' derivation='Avg' name='[avg:Salesadj:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Mean TemperatureF]' derivation='None' name='[none:Mean TemperatureF:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PrecipitationIn]' derivation='None' name='[none:PrecipitationIn:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[yr:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[none:Mean TemperatureF:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+          <pane id='10' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[none:PrecipitationIn:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[avg:Salesadj:qk]</rows>
+        <cols>([federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[mn:Date:ok] * ([federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[none:Mean TemperatureF:qk] + [federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[none:PrecipitationIn:qk]))</cols>
+      </table>
+      <simple-id uuid='{095F995B-7669-49E1-AF2B-22582178E6F8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='split (banana_ds)' name='federated.1hr3o9w0mbsi5g15p7n5c1fxckql' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1hr3o9w0mbsi5g15p7n5c1fxckql'>
+        <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+        <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='9' param='horz' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98000' id='7' w='90700' x='800' y='1000'>
+              <zone h='49000' id='3' name='Avg. Sales vs. Month' w='45200' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='5' name='Avg. Sales vs. Day' w='45200' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='34500' id='6' name='Sals vs. Year/Mo.' w='45500' x='46000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='25875' id='11' name='Sales vs. Weekdays by Month' w='45500' x='46000' y='35500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='37625' id='17' name='Holiday Search' w='45500' x='46000' y='61375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='77' h='98000' id='8' is-fixed='true' param='vert' w='7700' x='91500' y='1000'>
+              <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='23000' id='13' mode='checklist' name='Sals vs. Year/Mo.' param='[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[yr:Date:ok]' values='database' w='7700' x='91500' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='34875' id='14' name='Sales vs. Weekdays by Month' param='[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[mn:Date:ok]' values='database' w='7700' x='91500' y='24000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1500' minheight='1500' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='19' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='18' param='vert' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Avg. Sales vs. Month' w='45200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='23000' id='13' mode='checkdropdown' name='Sals vs. Year/Mo.' param='[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[yr:Date:ok]' values='database' w='7700' x='91500' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='268' h='34500' id='6' is-fixed='true' name='Sals vs. Year/Mo.' w='45500' x='46000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='34875' id='14' mode='checkdropdown' name='Sales vs. Weekdays by Month' param='[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[mn:Date:ok]' values='database' w='7700' x='91500' y='24000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='199' h='25875' id='11' is-fixed='true' name='Sales vs. Weekdays by Month' w='45500' x='46000' y='35500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='5' is-fixed='true' name='Avg. Sales vs. Day' w='45200' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37625' id='17' is-fixed='true' name='Holiday Search' w='45500' x='46000' y='61375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{23C2E686-D34A-4BE3-A571-A4AB96A658BA}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='0.833333' source-height='30'>
+    <window class='worksheet' name='Sals vs. Year/Mo.'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[yr:Date:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{5682CEF3-77F8-4070-932F-CFD09653FA60}' />
+    </window>
+    <window class='worksheet' name='Avg. Sales vs. Month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{85D3449A-1319-4546-89F3-9861A63927B2}' />
+    </window>
+    <window class='worksheet' name='Avg. Sales vs. Day'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EDE005E4-F989-40F4-A137-292F54DB95FD}' />
+    </window>
+    <window class='worksheet' name='Sales vs. Weekdays by Month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1hr3o9w0mbsi5g15p7n5c1fxckql].[mn:Date:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B0881463-77AA-4C94-A6C5-B56D1A824921}' />
+    </window>
+    <window class='worksheet' name='Jam'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D125C867-B47B-47C5-AB7D-BAE25E4EEA67}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Avg. Sales vs. Day'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Avg. Sales vs. Month'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Holiday Search'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sales vs. Weekdays by Month'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sals vs. Year/Mo.'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='13' />
+      <simple-id uuid='{5AC8A9D8-415C-4DB4-93EA-D248D35DC327}' />
+    </window>
+    <window class='worksheet' name='Holiday Search'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A4D501F2-04D6-45F2-9AEA-B7F08229EE93}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4E4AF83C-730E-43AB-8A13-3917FB6872AE}' />
+    </window>
+  </windows>
+</workbook>

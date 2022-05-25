@@ -1,0 +1,2222 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0420.1112                               -->
+<workbook source-build='2021.1.1 (20211.21.0420.1112)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='combined_MSA_credit (nk_fannie_mae)' inline='true' name='federated.1ipwa2c0g2jblh12wz7gl1khvmpf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='BigQuery' name='bigquery.0he4jlc0znk6rp1g98zb603ubo29'>
+            <connection CATALOG='decisive-circle-313616' EXECCATALOG='decisive-circle-313616' authentication='yes' bq-dataset-fetch-rows='' bq-fetch-rows='' bq-fetch-tasks='' bq-large-fetch-rows='' bq-project-fetch-rows='' bq-response-rows='' class='bigquery' connection-dialect='google-sql' project='Summer DVA' schema='nk_fannie_mae' server='' server-oauth='' username='n.g.keeley2@gmail.com' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='bigquery.0he4jlc0znk6rp1g98zb603ubo29' name='combined_MSA_credit' table='[decisive-circle-313616.nk_fannie_mae].[combined_MSA_credit]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='bigquery.0he4jlc0znk6rp1g98zb603ubo29' name='combined_MSA_credit' table='[decisive-circle-313616.nk_fannie_mae].[combined_MSA_credit]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Reference_Pool_ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Reference_Pool_ID]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Reference_Pool_ID</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loan_Identifier</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Loan_Identifier]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Loan_Identifier</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Monthly_Reporting_Period</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Monthly_Reporting_Period]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Monthly_Reporting_Period</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Channel</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Channel]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Channel</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Seller_Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Seller_Name]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Seller_Name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Servicer_Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Servicer_Name]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Servicer_Name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Master_Servicer</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Master_Servicer]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Master_Servicer</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Original_Interest_Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Original_Interest_Rate]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Original_Interest_Rate</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Current_Interest_Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Current_Interest_Rate]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Current_Interest_Rate</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Original_UPB</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Original_UPB]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Original_UPB</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UPB_at_Issuance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[UPB_at_Issuance]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>UPB_at_Issuance</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Current_Actual_UPB</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Current_Actual_UPB]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Current_Actual_UPB</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Original_Loan_Term</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Original_Loan_Term]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Original_Loan_Term</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Origination_Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Origination_Date]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Origination_Date</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>First_Payment_Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[First_Payment_Date]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>First_Payment_Date</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loan_Age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Loan_Age]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Loan_Age</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Remaining_Months_to_Legal_Maturity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Remaining_Months_to_Legal_Maturity]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Remaining_Months_to_Legal_Maturity</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Remaining_Months_To_Maturity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Remaining_Months_To_Maturity]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Remaining_Months_To_Maturity</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Maturity_Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Maturity_Date]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Maturity_Date</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Original_Loan_to_Value_Ratio_LTV</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Original_Loan_to_Value_Ratio_LTV]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Original_Loan_to_Value_Ratio_LTV</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Original_Combined_Loan_to_Value_Ratio_CLTV</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Original_Combined_Loan_to_Value_Ratio_CLTV]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Original_Combined_Loan_to_Value_Ratio_CLTV</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number_of_Borrowers</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Number_of_Borrowers]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Number_of_Borrowers</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Debt_To_Income_DTI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Debt_To_Income_DTI]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Debt_To_Income_DTI</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Borrower_Credit_Score_at_Origination</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Borrower_Credit_Score_at_Origination]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Borrower_Credit_Score_at_Origination</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Co_Borrower_Credit_Score_at_Origination</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Co_Borrower_Credit_Score_at_Origination]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Co_Borrower_Credit_Score_at_Origination</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>First_Time_Home_Buyer_Indicator</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[First_Time_Home_Buyer_Indicator]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>First_Time_Home_Buyer_Indicator</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loan_Purpose</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Loan_Purpose]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Loan_Purpose</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Property_Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Property_Type]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Property_Type</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number_of_Units</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Number_of_Units]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Number_of_Units</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Occupancy_Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Occupancy_Status]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Occupancy_Status</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Property_State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Property_State]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Property_State</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Metropolitan_Statistical_Area_MSA</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Metropolitan_Statistical_Area_MSA]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Metropolitan_Statistical_Area_MSA</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip_Code_Short</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Zip_Code_Short]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Zip_Code_Short</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mortgage_Insurance_Percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mortgage_Insurance_Percentage]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Mortgage_Insurance_Percentage</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Amortization_Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Amortization_Type]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Amortization_Type</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prepayment_Penalty_Indicator</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Prepayment_Penalty_Indicator]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Prepayment_Penalty_Indicator</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interest_Only_Loan_Indicator</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Interest_Only_Loan_Indicator]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Interest_Only_Loan_Indicator</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interest_Only_First_Principal_And_Interest_Payment_Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Interest_Only_First_Principal_And_Interest_Payment_Date]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Interest_Only_First_Principal_And_Interest_Payment_Date</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Months_to_Amortization</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Months_to_Amortization]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Months_to_Amortization</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Current_Loan_Delinquency_Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Current_Loan_Delinquency_Status]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Current_Loan_Delinquency_Status</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loan_Payment_History</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Loan_Payment_History]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Loan_Payment_History</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Modification_Flag</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Modification_Flag]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Modification_Flag</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mortgage_Insurance_Cancellation_Indicator</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Mortgage_Insurance_Cancellation_Indicator]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Mortgage_Insurance_Cancellation_Indicator</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zero_Balance_Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Zero_Balance_Code]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Zero_Balance_Code</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zero_Balance_Effective_Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Zero_Balance_Effective_Date]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Zero_Balance_Effective_Date</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UPB_at_the_Time_of_Removal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[UPB_at_the_Time_of_Removal]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>UPB_at_the_Time_of_Removal</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Repurchase_Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Repurchase_Date]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Repurchase_Date</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Scheduled_Principal_Current</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Scheduled_Principal_Current]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Scheduled_Principal_Current</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Principal_Current</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total_Principal_Current]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Total_Principal_Current</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unscheduled_Principal_Current</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Unscheduled_Principal_Current]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Unscheduled_Principal_Current</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last_Paid_Installment_Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Last_Paid_Installment_Date]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Last_Paid_Installment_Date</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Foreclosure_Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Foreclosure_Date]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Foreclosure_Date</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Disposition_Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Disposition_Date]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Disposition_Date</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Foreclosure_Costs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Foreclosure_Costs]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Foreclosure_Costs</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Property_Preservation_and_Repair_Costs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Property_Preservation_and_Repair_Costs]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Property_Preservation_and_Repair_Costs</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Asset_Recovery_Costs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Asset_Recovery_Costs]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Asset_Recovery_Costs</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Miscellaneous_Holding_Expenses_and_Credits</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Miscellaneous_Holding_Expenses_and_Credits]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Miscellaneous_Holding_Expenses_and_Credits</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Associated_Taxes_for_Holding_Property</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Associated_Taxes_for_Holding_Property]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Associated_Taxes_for_Holding_Property</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net_Sales_Proceeds</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Net_Sales_Proceeds]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Net_Sales_Proceeds</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Credit_Enhancement_Proceeds</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Credit_Enhancement_Proceeds]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Credit_Enhancement_Proceeds</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Repurchase_Make_Whole_Proceeds</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Repurchase_Make_Whole_Proceeds]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Repurchase_Make_Whole_Proceeds</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other_Foreclosure_Proceeds</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Other_Foreclosure_Proceeds]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Other_Foreclosure_Proceeds</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Non_Interest_Bearing_UPB</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Non_Interest_Bearing_UPB]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Non_Interest_Bearing_UPB</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Principal_Forgiveness_Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Principal_Forgiveness_Amount]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Principal_Forgiveness_Amount</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Original_List_Start_Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Original_List_Start_Date]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Original_List_Start_Date</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Original_List_Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Original_List_Price]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Original_List_Price</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Current_List_Start_Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Current_List_Start_Date]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Current_List_Start_Date</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Current_List_Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Current_List_Price]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Current_List_Price</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Borrower_Credit_Score_At_Issuance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Borrower_Credit_Score_At_Issuance]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Borrower_Credit_Score_At_Issuance</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Co_Borrower_Credit_Score_At_Issuance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Co_Borrower_Credit_Score_At_Issuance]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Co_Borrower_Credit_Score_At_Issuance</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Borrower_Credit_Score_Current</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Borrower_Credit_Score_Current]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Borrower_Credit_Score_Current</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Co_Borrower_Credit_Score_Current</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Co_Borrower_Credit_Score_Current]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Co_Borrower_Credit_Score_Current</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mortgage_Insurance_Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Mortgage_Insurance_Type]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Mortgage_Insurance_Type</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Servicing_Activity_Indicator</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Servicing_Activity_Indicator]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Servicing_Activity_Indicator</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Current_Period_Modification_Loss_Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Current_Period_Modification_Loss_Amount]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Current_Period_Modification_Loss_Amount</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cumulative_Modification_Loss_Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cumulative_Modification_Loss_Amount]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Cumulative_Modification_Loss_Amount</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Current_Period_Credit_Event_Net_Gain_or_Loss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Current_Period_Credit_Event_Net_Gain_or_Loss]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Current_Period_Credit_Event_Net_Gain_or_Loss</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cumulative_Credit_Event_Net_Gain_or_Loss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cumulative_Credit_Event_Net_Gain_or_Loss]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Cumulative_Credit_Event_Net_Gain_or_Loss</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HomeReady_Program_Indicator</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[HomeReady_Program_Indicator]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>HomeReady_Program_Indicator</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Foreclosure_Principal_Write_off_Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Foreclosure_Principal_Write_off_Amount]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Foreclosure_Principal_Write_off_Amount</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Relocation_Mortgage_Indicator</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Relocation_Mortgage_Indicator]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Relocation_Mortgage_Indicator</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zero_Balance_Code_Change_Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Zero_Balance_Code_Change_Date]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Zero_Balance_Code_Change_Date</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loan_Holdback_Indicator</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Loan_Holdback_Indicator]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Loan_Holdback_Indicator</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loan_Holdback_Effective_Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Loan_Holdback_Effective_Date]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Loan_Holdback_Effective_Date</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delinquent_Accrued_Interest</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Delinquent_Accrued_Interest]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Delinquent_Accrued_Interest</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Property_Valuation_Method</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Property_Valuation_Method]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Property_Valuation_Method</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>High_Balance_Loan_Indicator</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[High_Balance_Loan_Indicator]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>High_Balance_Loan_Indicator</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ARM_Initial_Fixed_Rate_Period_lessEqual_5_YR_Indicator</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ARM_Initial_Fixed_Rate_Period_lessEqual_5_YR_Indicator]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>ARM_Initial_Fixed_Rate_Period_lessEqual_5_YR_Indicator</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ARM_Product_Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ARM_Product_Type]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>ARM_Product_Type</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Initial_Fixed_Rate_Period</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Initial_Fixed_Rate_Period]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Initial_Fixed_Rate_Period</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interest_Rate_Adjustment_Frequency</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Interest_Rate_Adjustment_Frequency]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Interest_Rate_Adjustment_Frequency</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Next_Interest_Rate_Adjustment_Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Next_Interest_Rate_Adjustment_Date]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Next_Interest_Rate_Adjustment_Date</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Next_Payment_Change_Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Next_Payment_Change_Date]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Next_Payment_Change_Date</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Index</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Index]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Index</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ARM_Cap_Structure</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ARM_Cap_Structure]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>ARM_Cap_Structure</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Initial_Interest_Rate_Cap_Up_Percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Initial_Interest_Rate_Cap_Up_Percent]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Initial_Interest_Rate_Cap_Up_Percent</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Periodic_Interest_Rate_Cap_Up_Percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Periodic_Interest_Rate_Cap_Up_Percent]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Periodic_Interest_Rate_Cap_Up_Percent</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lifetime_Interest_Rate_Cap_Up_Percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lifetime_Interest_Rate_Cap_Up_Percent]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Lifetime_Interest_Rate_Cap_Up_Percent</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mortgage_Margin</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mortgage_Margin]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Mortgage_Margin</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ARM_Balloon_Indicator</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ARM_Balloon_Indicator]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>ARM_Balloon_Indicator</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ARM_Plan_Number</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ARM_Plan_Number]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>ARM_Plan_Number</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Borrower_Assistance_Plan</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Borrower_Assistance_Plan]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Borrower_Assistance_Plan</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>High_Loan_to_Value_HLTV_Refinance_Option_Indicator</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[High_Loan_to_Value_HLTV_Refinance_Option_Indicator]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>High_Loan_to_Value_HLTV_Refinance_Option_Indicator</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deal_Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Deal_Name]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Deal_Name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Repurchase_Make_Whole_Proceeds_Flag</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Repurchase_Make_Whole_Proceeds_Flag]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Repurchase_Make_Whole_Proceeds_Flag</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alternative_Delinquency_Resolution</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Alternative_Delinquency_Resolution]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Alternative_Delinquency_Resolution</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alternative_Delinquency_Resolution_Count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Alternative_Delinquency_Resolution_Count]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Alternative_Delinquency_Resolution_Count</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Deferral_Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total_Deferral_Amount]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Total_Deferral_Amount</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Monthly_Reported_Period_YYYYMM</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Monthly_Reported_Period_YYYYMM]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Monthly_Reported_Period_YYYYMM</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last_Reporting_Period</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Last_Reporting_Period]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Last_Reporting_Period</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Default_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Default_flag]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Default_flag</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MSA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MSA]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>MSA</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MSA_Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MSA_Name]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>MSA_Name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CENSUS_2010_POP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CENSUS_2010_POP]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>CENSUS_2010_POP</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Credit_Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Credit_Category]</local-name>
+            <parent-name>[combined_MSA_credit]</parent-name>
+            <remote-alias>Credit_Category</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='ARM Balloon Indicator' datatype='string' name='[ARM_Balloon_Indicator]' role='dimension' type='nominal' />
+      <column caption='ARM Cap Structure' datatype='string' name='[ARM_Cap_Structure]' role='dimension' type='nominal' />
+      <column caption='ARM Initial Fixed Rate Period lessEqual 5 YR Indicator' datatype='string' name='[ARM_Initial_Fixed_Rate_Period_lessEqual_5_YR_Indicator]' role='dimension' type='nominal' />
+      <column caption='ARM Plan Number' datatype='real' name='[ARM_Plan_Number]' role='dimension' type='ordinal' />
+      <column caption='ARM Product Type' datatype='string' name='[ARM_Product_Type]' role='dimension' type='nominal' />
+      <column caption='Alternative Delinquency Resolution' datatype='string' name='[Alternative_Delinquency_Resolution]' role='dimension' type='nominal' />
+      <column caption='Alternative Delinquency Resolution Count' datatype='real' name='[Alternative_Delinquency_Resolution_Count]' role='measure' type='quantitative' />
+      <column caption='Amortization Type' datatype='string' name='[Amortization_Type]' role='dimension' type='nominal' />
+      <column caption='Asset Recovery Costs' datatype='real' name='[Asset_Recovery_Costs]' role='measure' type='quantitative' />
+      <column caption='Associated Taxes for Holding Property' datatype='real' name='[Associated_Taxes_for_Holding_Property]' role='measure' type='quantitative' />
+      <column caption='Borrower Assistance Plan' datatype='string' name='[Borrower_Assistance_Plan]' role='dimension' type='nominal' />
+      <column caption='Borrower Credit Score At Issuance' datatype='real' name='[Borrower_Credit_Score_At_Issuance]' role='measure' type='quantitative' />
+      <column caption='Borrower Credit Score Current' datatype='real' name='[Borrower_Credit_Score_Current]' role='measure' type='quantitative' />
+      <column caption='Borrower Credit Score at Origination' datatype='real' name='[Borrower_Credit_Score_at_Origination]' role='measure' type='quantitative' />
+      <column caption='Census 2010 Pop' datatype='integer' name='[CENSUS_2010_POP]' role='measure' type='quantitative' />
+      <column caption='Log CS at Origination' datatype='real' name='[Calculation_1340665358513999874]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='LN([Borrower_Credit_Score_at_Origination])' />
+      </column>
+      <column aggregation='None' caption='Binned CS at Origination' datatype='integer' name='[Co Borrower Credit Score at Origination (copy) (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[Co Borrower Credit Score at Origination (copy)_1340665358512619520]' peg='0' size='50' />
+      </column>
+      <column caption='Co Borrower Credit Score at Origination (copy)' datatype='real' name='[Co Borrower Credit Score at Origination (copy)_1340665358512619520]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Co_Borrower_Credit_Score_at_Origination]' />
+      </column>
+      <column caption='Co Borrower Credit Score At Issuance' datatype='real' name='[Co_Borrower_Credit_Score_At_Issuance]' role='measure' type='quantitative' />
+      <column caption='Co Borrower Credit Score Current' datatype='real' name='[Co_Borrower_Credit_Score_Current]' role='measure' type='quantitative' />
+      <column caption='Co Borrower Credit Score at Origination' datatype='real' name='[Co_Borrower_Credit_Score_at_Origination]' role='measure' type='quantitative' />
+      <column caption='Credit Category' datatype='string' name='[Credit_Category]' role='dimension' type='nominal' />
+      <column caption='Credit Enhancement Proceeds' datatype='real' name='[Credit_Enhancement_Proceeds]' role='measure' type='quantitative' />
+      <column caption='Cumulative Credit Event Net Gain or Loss' datatype='real' name='[Cumulative_Credit_Event_Net_Gain_or_Loss]' role='measure' type='quantitative' />
+      <column caption='Cumulative Modification Loss Amount' datatype='real' name='[Cumulative_Modification_Loss_Amount]' role='measure' type='quantitative' />
+      <column caption='Current Actual UPB' datatype='real' name='[Current_Actual_UPB]' role='measure' type='quantitative' />
+      <column caption='Current Interest Rate' datatype='real' name='[Current_Interest_Rate]' role='measure' type='quantitative' />
+      <column caption='Current List Price' datatype='real' name='[Current_List_Price]' role='measure' type='quantitative' />
+      <column caption='Current List Start Date' datatype='string' name='[Current_List_Start_Date]' role='dimension' type='nominal' />
+      <column caption='Current Loan Delinquency Status' datatype='string' name='[Current_Loan_Delinquency_Status]' role='dimension' type='nominal' />
+      <column caption='Current Period Credit Event Net Gain or Loss' datatype='real' name='[Current_Period_Credit_Event_Net_Gain_or_Loss]' role='measure' type='quantitative' />
+      <column caption='Current Period Modification Loss Amount' datatype='real' name='[Current_Period_Modification_Loss_Amount]' role='measure' type='quantitative' />
+      <column caption='Deal Name' datatype='string' name='[Deal_Name]' role='dimension' type='nominal' />
+      <column caption='Debt To Income DTI' datatype='real' name='[Debt_To_Income_DTI]' role='measure' type='quantitative' />
+      <column caption='Default flag' datatype='integer' name='[Default_flag]' role='measure' type='quantitative' />
+      <column caption='Delinquent Accrued Interest' datatype='real' name='[Delinquent_Accrued_Interest]' role='measure' type='quantitative' />
+      <column caption='Disposition Date' datatype='string' name='[Disposition_Date]' role='dimension' type='nominal' />
+      <column caption='First Payment Date' datatype='string' name='[First_Payment_Date]' role='dimension' type='nominal' />
+      <column caption='First Time Home Buyer Indicator' datatype='string' name='[First_Time_Home_Buyer_Indicator]' role='dimension' type='nominal' />
+      <column caption='Foreclosure Costs' datatype='real' name='[Foreclosure_Costs]' role='measure' type='quantitative' />
+      <column caption='Foreclosure Date' datatype='string' name='[Foreclosure_Date]' role='dimension' type='nominal' />
+      <column caption='Foreclosure Principal Write off Amount' datatype='real' name='[Foreclosure_Principal_Write_off_Amount]' role='measure' type='quantitative' />
+      <column caption='High Balance Loan Indicator' datatype='string' name='[High_Balance_Loan_Indicator]' role='dimension' type='nominal' />
+      <column caption='High Loan to Value HLTV Refinance Option Indicator' datatype='string' name='[High_Loan_to_Value_HLTV_Refinance_Option_Indicator]' role='dimension' type='nominal' />
+      <column caption='HomeReady Program Indicator' datatype='string' name='[HomeReady_Program_Indicator]' role='dimension' type='nominal' />
+      <column caption='Initial Fixed Rate Period' datatype='real' name='[Initial_Fixed_Rate_Period]' role='measure' type='quantitative' />
+      <column caption='Initial Interest Rate Cap Up Percent' datatype='real' name='[Initial_Interest_Rate_Cap_Up_Percent]' role='measure' type='quantitative' />
+      <column caption='Interest Only First Principal And Interest Payment Date' datatype='string' name='[Interest_Only_First_Principal_And_Interest_Payment_Date]' role='dimension' type='nominal' />
+      <column caption='Interest Only Loan Indicator' datatype='string' name='[Interest_Only_Loan_Indicator]' role='dimension' type='nominal' />
+      <column caption='Interest Rate Adjustment Frequency' datatype='real' name='[Interest_Rate_Adjustment_Frequency]' role='measure' type='quantitative' />
+      <column caption='Last Paid Installment Date' datatype='string' name='[Last_Paid_Installment_Date]' role='dimension' type='nominal' />
+      <column caption='Last Reporting Period' datatype='string' name='[Last_Reporting_Period]' role='dimension' type='nominal' />
+      <column caption='Lifetime Interest Rate Cap Up Percent' datatype='real' name='[Lifetime_Interest_Rate_Cap_Up_Percent]' role='measure' type='quantitative' />
+      <column caption='Loan Age' datatype='real' name='[Loan_Age]' role='measure' type='quantitative' />
+      <column caption='Loan Holdback Effective Date' datatype='string' name='[Loan_Holdback_Effective_Date]' role='dimension' type='nominal' />
+      <column caption='Loan Holdback Indicator' datatype='string' name='[Loan_Holdback_Indicator]' role='dimension' type='nominal' />
+      <column caption='Loan Identifier' datatype='string' name='[Loan_Identifier]' role='dimension' type='nominal' />
+      <column caption='Loan Payment History' datatype='string' name='[Loan_Payment_History]' role='dimension' type='nominal' />
+      <column caption='Loan Purpose' datatype='string' name='[Loan_Purpose]' role='dimension' type='nominal' />
+      <column caption='Log CS at Origination (bin)' datatype='integer' name='[Log CS at Origination (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Calculation_1340665358513999874]' peg='0' size='1' />
+      </column>
+      <column caption='MSA Name' datatype='string' name='[MSA_Name]' role='dimension' type='nominal' />
+      <column caption='Master Servicer' datatype='string' name='[Master_Servicer]' role='dimension' type='nominal' />
+      <column caption='Maturity Date' datatype='string' name='[Maturity_Date]' role='dimension' type='nominal' />
+      <column caption='Metropolitan Statistical Area MSA' datatype='string' name='[Metropolitan_Statistical_Area_MSA]' role='dimension' semantic-role='[CMSA].[Name]' type='nominal' />
+      <column caption='Miscellaneous Holding Expenses and Credits' datatype='real' name='[Miscellaneous_Holding_Expenses_and_Credits]' role='measure' type='quantitative' />
+      <column caption='Modification Flag' datatype='string' name='[Modification_Flag]' role='dimension' type='nominal' />
+      <column caption='Monthly Reported Period YYYYMM' datatype='string' name='[Monthly_Reported_Period_YYYYMM]' role='dimension' type='nominal' />
+      <column caption='Monthly Reporting Period' datatype='string' name='[Monthly_Reporting_Period]' role='dimension' type='nominal' />
+      <column caption='Months to Amortization' datatype='real' name='[Months_to_Amortization]' role='measure' type='quantitative' />
+      <column caption='Mortgage Insurance Cancellation Indicator' datatype='string' name='[Mortgage_Insurance_Cancellation_Indicator]' role='dimension' type='nominal' />
+      <column caption='Mortgage Insurance Percentage' datatype='real' name='[Mortgage_Insurance_Percentage]' role='measure' type='quantitative' />
+      <column caption='Mortgage Insurance Type' datatype='string' name='[Mortgage_Insurance_Type]' role='dimension' type='nominal' />
+      <column caption='Mortgage Margin' datatype='real' name='[Mortgage_Margin]' role='measure' type='quantitative' />
+      <column caption='Net Sales Proceeds' datatype='real' name='[Net_Sales_Proceeds]' role='measure' type='quantitative' />
+      <column caption='Next Interest Rate Adjustment Date' datatype='string' name='[Next_Interest_Rate_Adjustment_Date]' role='dimension' type='nominal' />
+      <column caption='Next Payment Change Date' datatype='string' name='[Next_Payment_Change_Date]' role='dimension' type='nominal' />
+      <column caption='Non Interest Bearing UPB' datatype='real' name='[Non_Interest_Bearing_UPB]' role='measure' type='quantitative' />
+      <column caption='Number of Borrowers' datatype='real' name='[Number_of_Borrowers]' role='measure' type='quantitative' />
+      <column caption='Number of Units' datatype='real' name='[Number_of_Units]' role='measure' type='quantitative' />
+      <column caption='Occupancy Status' datatype='string' name='[Occupancy_Status]' role='dimension' type='nominal' />
+      <column caption='Original Combined Loan to Value Ratio CLTV' datatype='real' name='[Original_Combined_Loan_to_Value_Ratio_CLTV]' role='measure' type='quantitative' />
+      <column caption='Original Interest Rate' datatype='real' name='[Original_Interest_Rate]' role='measure' type='quantitative' />
+      <column caption='Original List Price' datatype='real' name='[Original_List_Price]' role='measure' type='quantitative' />
+      <column caption='Original List Start Date' datatype='string' name='[Original_List_Start_Date]' role='dimension' type='nominal' />
+      <column caption='Original Loan Term' datatype='real' name='[Original_Loan_Term]' role='measure' type='quantitative' />
+      <column caption='Original Loan to Value Ratio LTV' datatype='real' name='[Original_Loan_to_Value_Ratio_LTV]' role='measure' type='quantitative' />
+      <column caption='Original UPB' datatype='real' name='[Original_UPB]' role='measure' type='quantitative' />
+      <column caption='Origination Date' datatype='string' name='[Origination_Date]' role='dimension' type='nominal' />
+      <column caption='Other Foreclosure Proceeds' datatype='real' name='[Other_Foreclosure_Proceeds]' role='measure' type='quantitative' />
+      <column caption='Periodic Interest Rate Cap Up Percent' datatype='real' name='[Periodic_Interest_Rate_Cap_Up_Percent]' role='measure' type='quantitative' />
+      <column caption='Prepayment Penalty Indicator' datatype='string' name='[Prepayment_Penalty_Indicator]' role='dimension' type='nominal' />
+      <column caption='Principal Forgiveness Amount' datatype='real' name='[Principal_Forgiveness_Amount]' role='measure' type='quantitative' />
+      <column caption='Property Preservation and Repair Costs' datatype='real' name='[Property_Preservation_and_Repair_Costs]' role='measure' type='quantitative' />
+      <column caption='Property State' datatype='string' name='[Property_State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Property Type' datatype='string' name='[Property_Type]' role='dimension' type='nominal' />
+      <column caption='Property Valuation Method' datatype='string' name='[Property_Valuation_Method]' role='dimension' type='nominal' />
+      <column caption='Reference Pool ID' datatype='string' name='[Reference_Pool_ID]' role='dimension' type='nominal' />
+      <column caption='Relocation Mortgage Indicator' datatype='string' name='[Relocation_Mortgage_Indicator]' role='dimension' type='nominal' />
+      <column caption='Remaining Months To Maturity' datatype='real' name='[Remaining_Months_To_Maturity]' role='measure' type='quantitative' />
+      <column caption='Remaining Months to Legal Maturity' datatype='real' name='[Remaining_Months_to_Legal_Maturity]' role='measure' type='quantitative' />
+      <column caption='Repurchase Date' datatype='string' name='[Repurchase_Date]' role='dimension' type='nominal' />
+      <column caption='Repurchase Make Whole Proceeds' datatype='real' name='[Repurchase_Make_Whole_Proceeds]' role='measure' type='quantitative' />
+      <column caption='Repurchase Make Whole Proceeds Flag' datatype='string' name='[Repurchase_Make_Whole_Proceeds_Flag]' role='dimension' type='nominal' />
+      <column caption='Scheduled Principal Current' datatype='real' name='[Scheduled_Principal_Current]' role='measure' type='quantitative' />
+      <column caption='Seller Name' datatype='string' name='[Seller_Name]' role='dimension' type='nominal' />
+      <column caption='Servicer Name' datatype='string' name='[Servicer_Name]' role='dimension' type='nominal' />
+      <column caption='Servicing Activity Indicator' datatype='string' name='[Servicing_Activity_Indicator]' role='dimension' type='nominal' />
+      <column caption='Total Deferral Amount' datatype='real' name='[Total_Deferral_Amount]' role='measure' type='quantitative' />
+      <column caption='Total Principal Current' datatype='real' name='[Total_Principal_Current]' role='measure' type='quantitative' />
+      <column caption='UPB at Issuance' datatype='real' name='[UPB_at_Issuance]' role='measure' type='quantitative' />
+      <column caption='UPB at the Time of Removal' datatype='real' name='[UPB_at_the_Time_of_Removal]' role='measure' type='quantitative' />
+      <column caption='Unscheduled Principal Current' datatype='real' name='[Unscheduled_Principal_Current]' role='measure' type='quantitative' />
+      <column caption='Zero Balance Code' datatype='string' name='[Zero_Balance_Code]' role='dimension' type='nominal' />
+      <column caption='Zero Balance Code Change Date' datatype='string' name='[Zero_Balance_Code_Change_Date]' role='dimension' type='nominal' />
+      <column caption='Zero Balance Effective Date' datatype='string' name='[Zero_Balance_Effective_Date]' role='dimension' type='nominal' />
+      <column caption='Zip Code Short' datatype='string' name='[Zip_Code_Short]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='combined_MSA_credit' datatype='table' name='[__tableau_internal_object_id__].[combined_MSA_credit_C267556A38A84166B17AE455E575BC4E]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Reference_Pool_ID' />
+        <field-sort-custom-order field='Loan_Identifier' />
+        <field-sort-custom-order field='Monthly_Reporting_Period' />
+        <field-sort-custom-order field='Channel' />
+        <field-sort-custom-order field='Seller_Name' />
+        <field-sort-custom-order field='Servicer_Name' />
+        <field-sort-custom-order field='Master_Servicer' />
+        <field-sort-custom-order field='Original_Interest_Rate' />
+        <field-sort-custom-order field='Current_Interest_Rate' />
+        <field-sort-custom-order field='Original_UPB' />
+        <field-sort-custom-order field='UPB_at_Issuance' />
+        <field-sort-custom-order field='Current_Actual_UPB' />
+        <field-sort-custom-order field='Original_Loan_Term' />
+        <field-sort-custom-order field='Origination_Date' />
+        <field-sort-custom-order field='First_Payment_Date' />
+        <field-sort-custom-order field='Loan_Age' />
+        <field-sort-custom-order field='Remaining_Months_to_Legal_Maturity' />
+        <field-sort-custom-order field='Remaining_Months_To_Maturity' />
+        <field-sort-custom-order field='Maturity_Date' />
+        <field-sort-custom-order field='Original_Loan_to_Value_Ratio_LTV' />
+        <field-sort-custom-order field='Original_Combined_Loan_to_Value_Ratio_CLTV' />
+        <field-sort-custom-order field='Number_of_Borrowers' />
+        <field-sort-custom-order field='Debt_To_Income_DTI' />
+        <field-sort-custom-order field='Borrower_Credit_Score_at_Origination' />
+        <field-sort-custom-order field='Calculation_1340665358513999874' />
+        <field-sort-custom-order field='Co_Borrower_Credit_Score_at_Origination' />
+        <field-sort-custom-order field='First_Time_Home_Buyer_Indicator' />
+        <field-sort-custom-order field='Loan_Purpose' />
+        <field-sort-custom-order field='Property_Type' />
+        <field-sort-custom-order field='Number_of_Units' />
+        <field-sort-custom-order field='Occupancy_Status' />
+        <field-sort-custom-order field='Property_State' />
+        <field-sort-custom-order field='Metropolitan_Statistical_Area_MSA' />
+        <field-sort-custom-order field='Zip_Code_Short' />
+        <field-sort-custom-order field='Mortgage_Insurance_Percentage' />
+        <field-sort-custom-order field='Amortization_Type' />
+        <field-sort-custom-order field='Prepayment_Penalty_Indicator' />
+        <field-sort-custom-order field='Interest_Only_Loan_Indicator' />
+        <field-sort-custom-order field='Interest_Only_First_Principal_And_Interest_Payment_Date' />
+        <field-sort-custom-order field='Months_to_Amortization' />
+        <field-sort-custom-order field='Current_Loan_Delinquency_Status' />
+        <field-sort-custom-order field='Loan_Payment_History' />
+        <field-sort-custom-order field='Modification_Flag' />
+        <field-sort-custom-order field='Mortgage_Insurance_Cancellation_Indicator' />
+        <field-sort-custom-order field='Zero_Balance_Code' />
+        <field-sort-custom-order field='Zero_Balance_Effective_Date' />
+        <field-sort-custom-order field='UPB_at_the_Time_of_Removal' />
+        <field-sort-custom-order field='Repurchase_Date' />
+        <field-sort-custom-order field='Scheduled_Principal_Current' />
+        <field-sort-custom-order field='Total_Principal_Current' />
+        <field-sort-custom-order field='Unscheduled_Principal_Current' />
+        <field-sort-custom-order field='Last_Paid_Installment_Date' />
+        <field-sort-custom-order field='Foreclosure_Date' />
+        <field-sort-custom-order field='Disposition_Date' />
+        <field-sort-custom-order field='Foreclosure_Costs' />
+        <field-sort-custom-order field='Property_Preservation_and_Repair_Costs' />
+        <field-sort-custom-order field='Asset_Recovery_Costs' />
+        <field-sort-custom-order field='Miscellaneous_Holding_Expenses_and_Credits' />
+        <field-sort-custom-order field='Associated_Taxes_for_Holding_Property' />
+        <field-sort-custom-order field='Net_Sales_Proceeds' />
+        <field-sort-custom-order field='Credit_Enhancement_Proceeds' />
+        <field-sort-custom-order field='Repurchase_Make_Whole_Proceeds' />
+        <field-sort-custom-order field='Other_Foreclosure_Proceeds' />
+        <field-sort-custom-order field='Non_Interest_Bearing_UPB' />
+        <field-sort-custom-order field='Principal_Forgiveness_Amount' />
+        <field-sort-custom-order field='Original_List_Start_Date' />
+        <field-sort-custom-order field='Original_List_Price' />
+        <field-sort-custom-order field='Current_List_Start_Date' />
+        <field-sort-custom-order field='Current_List_Price' />
+        <field-sort-custom-order field='Borrower_Credit_Score_At_Issuance' />
+        <field-sort-custom-order field='Co_Borrower_Credit_Score_At_Issuance' />
+        <field-sort-custom-order field='Borrower_Credit_Score_Current' />
+        <field-sort-custom-order field='Co_Borrower_Credit_Score_Current' />
+        <field-sort-custom-order field='Mortgage_Insurance_Type' />
+        <field-sort-custom-order field='Servicing_Activity_Indicator' />
+        <field-sort-custom-order field='Current_Period_Modification_Loss_Amount' />
+        <field-sort-custom-order field='Cumulative_Modification_Loss_Amount' />
+        <field-sort-custom-order field='Current_Period_Credit_Event_Net_Gain_or_Loss' />
+        <field-sort-custom-order field='Cumulative_Credit_Event_Net_Gain_or_Loss' />
+        <field-sort-custom-order field='HomeReady_Program_Indicator' />
+        <field-sort-custom-order field='Foreclosure_Principal_Write_off_Amount' />
+        <field-sort-custom-order field='Relocation_Mortgage_Indicator' />
+        <field-sort-custom-order field='Zero_Balance_Code_Change_Date' />
+        <field-sort-custom-order field='Loan_Holdback_Indicator' />
+        <field-sort-custom-order field='Loan_Holdback_Effective_Date' />
+        <field-sort-custom-order field='Delinquent_Accrued_Interest' />
+        <field-sort-custom-order field='Property_Valuation_Method' />
+        <field-sort-custom-order field='High_Balance_Loan_Indicator' />
+        <field-sort-custom-order field='ARM_Initial_Fixed_Rate_Period_lessEqual_5_YR_Indicator' />
+        <field-sort-custom-order field='ARM_Product_Type' />
+        <field-sort-custom-order field='Initial_Fixed_Rate_Period' />
+        <field-sort-custom-order field='Interest_Rate_Adjustment_Frequency' />
+        <field-sort-custom-order field='Next_Interest_Rate_Adjustment_Date' />
+        <field-sort-custom-order field='Next_Payment_Change_Date' />
+        <field-sort-custom-order field='Index' />
+        <field-sort-custom-order field='ARM_Cap_Structure' />
+        <field-sort-custom-order field='Initial_Interest_Rate_Cap_Up_Percent' />
+        <field-sort-custom-order field='Periodic_Interest_Rate_Cap_Up_Percent' />
+        <field-sort-custom-order field='Lifetime_Interest_Rate_Cap_Up_Percent' />
+        <field-sort-custom-order field='Mortgage_Margin' />
+        <field-sort-custom-order field='ARM_Balloon_Indicator' />
+        <field-sort-custom-order field='ARM_Plan_Number' />
+        <field-sort-custom-order field='Borrower_Assistance_Plan' />
+        <field-sort-custom-order field='High_Loan_to_Value_HLTV_Refinance_Option_Indicator' />
+        <field-sort-custom-order field='Deal_Name' />
+        <field-sort-custom-order field='Repurchase_Make_Whole_Proceeds_Flag' />
+        <field-sort-custom-order field='Alternative_Delinquency_Resolution' />
+        <field-sort-custom-order field='Alternative_Delinquency_Resolution_Count' />
+        <field-sort-custom-order field='Total_Deferral_Amount' />
+        <field-sort-custom-order field='Monthly_Reported_Period_YYYYMM' />
+        <field-sort-custom-order field='Last_Reporting_Period' />
+        <field-sort-custom-order field='Default_flag' />
+        <field-sort-custom-order field='MSA' />
+        <field-sort-custom-order field='MSA_Name' />
+        <field-sort-custom-order field='CENSUS_2010_POP' />
+        <field-sort-custom-order field='Credit_Category' />
+        <field-sort-custom-order field='Co Borrower Credit Score at Origination (copy)_1340665358512619520' />
+        <field-sort-custom-order field='Co Borrower Credit Score at Origination (copy) (bin)' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='combined_MSA_credit' id='combined_MSA_credit_C267556A38A84166B17AE455E575BC4E'>
+            <properties context=''>
+              <relation connection='bigquery.0he4jlc0znk6rp1g98zb603ubo29' name='combined_MSA_credit' table='[decisive-circle-313616.nk_fannie_mae].[combined_MSA_credit]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Binned CS'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_MSA_credit (nk_fannie_mae)' name='federated.1ipwa2c0g2jblh12wz7gl1khvmpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ipwa2c0g2jblh12wz7gl1khvmpf'>
+            <column aggregation='None' caption='Binned CS at Origination' datatype='integer' name='[Co Borrower Credit Score at Origination (copy) (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[Co Borrower Credit Score at Origination (copy)_1340665358512619520]' peg='0' size='50' />
+            </column>
+            <column caption='Co Borrower Credit Score at Origination (copy)' datatype='real' name='[Co Borrower Credit Score at Origination (copy)_1340665358512619520]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Co_Borrower_Credit_Score_at_Origination]' />
+            </column>
+            <column caption='Co Borrower Credit Score at Origination' datatype='real' name='[Co_Borrower_Credit_Score_at_Origination]' role='measure' type='quantitative' />
+            <column caption='Default flag' datatype='integer' name='[Default_flag]' role='measure' type='quantitative' />
+            <column-instance column='[Default_flag]' derivation='Avg' name='[avg:Default_flag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Co Borrower Credit Score at Origination (copy) (bin)]' derivation='None' name='[none:Co Borrower Credit Score at Origination (copy) (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[avg:Default_flag:qk]' field-type='quantitative' max='0.77527810065759761' min='-0.26601389592650249' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+          </pane>
+        </panes>
+        <rows>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[avg:Default_flag:qk]</rows>
+        <cols>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[none:Co Borrower Credit Score at Origination (copy) (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[Co Borrower Credit Score at Origination (copy) (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{BBB523CF-1C18-4E7A-A468-E9BBED4E6EE1}' />
+    </worksheet>
+    <worksheet name='Borrowers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_MSA_credit (nk_fannie_mae)' name='federated.1ipwa2c0g2jblh12wz7gl1khvmpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ipwa2c0g2jblh12wz7gl1khvmpf'>
+            <column caption='Number of Borrowers' datatype='real' name='[Number_of_Borrowers]' role='measure' type='quantitative' />
+            <column-instance column='[Number_of_Borrowers]' derivation='Count' name='[cnt:Number_of_Borrowers:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[cnt:Number_of_Borrowers:qk]</cols>
+      </table>
+      <simple-id uuid='{07136991-F9DA-447F-ACDE-3DC26930206B}' />
+    </worksheet>
+    <worksheet name='By State'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_MSA_credit (nk_fannie_mae)' name='federated.1ipwa2c0g2jblh12wz7gl1khvmpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ipwa2c0g2jblh12wz7gl1khvmpf'>
+            <column caption='Default flag' datatype='integer' name='[Default_flag]' role='measure' type='quantitative' />
+            <column caption='Occupancy Status' datatype='string' name='[Occupancy_Status]' role='dimension' type='nominal' />
+            <column-instance column='[Default_flag]' derivation='Avg' name='[avg:Default_flag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Occupancy_Status]' derivation='None' name='[none:Occupancy_Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[avg:Default_flag:qk]' scope='rows' value='Default Rate' />
+            <encoding attr='space' class='0' field='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[avg:Default_flag:qk]' field-type='quantitative' max='0.077640131578761179' min='-0.0077302444738557904' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[avg:Default_flag:qk]</rows>
+        <cols>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[none:Occupancy_Status:nk]</cols>
+      </table>
+      <simple-id uuid='{54EB8146-2E54-4249-874B-5566E79DDE2D}' />
+    </worksheet>
+    <worksheet name='Default by Cat.'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_MSA_credit (nk_fannie_mae)' name='federated.1ipwa2c0g2jblh12wz7gl1khvmpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ipwa2c0g2jblh12wz7gl1khvmpf'>
+            <column caption='Credit Category' datatype='string' name='[Credit_Category]' role='dimension' type='nominal' />
+            <column caption='Default flag' datatype='integer' name='[Default_flag]' role='measure' type='quantitative' />
+            <column-instance column='[Default_flag]' derivation='Avg' name='[avg:Default_flag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Credit_Category]' derivation='None' name='[none:Credit_Category:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[none:Credit_Category:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Credit_Category:nk]' />
+              <groupfilter function='member' level='[none:Credit_Category:nk]' member='&quot;Non-existent&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[none:Credit_Category:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[avg:Default_flag:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[none:Credit_Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[avg:Default_flag:qk]</rows>
+        <cols>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[none:Credit_Category:nk]</cols>
+      </table>
+      <simple-id uuid='{78FC0303-CC96-414E-B2DC-1DDB8EA1E942}' />
+    </worksheet>
+    <worksheet name='First Buyer'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_MSA_credit (nk_fannie_mae)' name='federated.1ipwa2c0g2jblh12wz7gl1khvmpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ipwa2c0g2jblh12wz7gl1khvmpf'>
+            <column caption='Default flag' datatype='integer' name='[Default_flag]' role='measure' type='quantitative' />
+            <column caption='First Time Home Buyer Indicator' datatype='string' name='[First_Time_Home_Buyer_Indicator]' role='dimension' type='nominal' />
+            <column-instance column='[Default_flag]' derivation='Avg' name='[avg:Default_flag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[First_Time_Home_Buyer_Indicator]' derivation='None' name='[none:First_Time_Home_Buyer_Indicator:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[none:First_Time_Home_Buyer_Indicator:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:First_Time_Home_Buyer_Indicator:nk]' />
+              <groupfilter function='member' level='[none:First_Time_Home_Buyer_Indicator:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[none:First_Time_Home_Buyer_Indicator:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[avg:Default_flag:qk]</rows>
+        <cols>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[none:First_Time_Home_Buyer_Indicator:nk]</cols>
+      </table>
+      <simple-id uuid='{17E9634E-EC4E-4169-9EA7-336542F76588}' />
+    </worksheet>
+    <worksheet name='Interest'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_MSA_credit (nk_fannie_mae)' name='federated.1ipwa2c0g2jblh12wz7gl1khvmpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ipwa2c0g2jblh12wz7gl1khvmpf'>
+            <column caption='Default flag' datatype='integer' name='[Default_flag]' role='measure' type='quantitative' />
+            <column caption='Original Interest Rate' datatype='real' name='[Original_Interest_Rate]' role='measure' type='quantitative' />
+            <column-instance column='[Default_flag]' derivation='Avg' name='[avg:Default_flag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Original_Interest_Rate]' derivation='None' name='[none:Original_Interest_Rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Default_flag]' derivation='Sum' name='[sum:Default_flag:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[avg:Default_flag:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[sum:Default_flag:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>([federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[avg:Default_flag:qk] + [federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[sum:Default_flag:qk])</rows>
+        <cols>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[none:Original_Interest_Rate:qk]</cols>
+      </table>
+      <simple-id uuid='{23568389-631F-4521-A3AB-563914945655}' />
+    </worksheet>
+    <worksheet name='Log CS'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_MSA_credit (nk_fannie_mae)' name='federated.1ipwa2c0g2jblh12wz7gl1khvmpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ipwa2c0g2jblh12wz7gl1khvmpf'>
+            <column caption='Borrower Credit Score at Origination' datatype='real' name='[Borrower_Credit_Score_at_Origination]' role='measure' type='quantitative' />
+            <column caption='Log CS at Origination' datatype='real' name='[Calculation_1340665358513999874]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='LN([Borrower_Credit_Score_at_Origination])' />
+            </column>
+            <column caption='Default flag' datatype='integer' name='[Default_flag]' role='measure' type='quantitative' />
+            <column-instance column='[Default_flag]' derivation='Avg' name='[avg:Default_flag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1340665358513999874]' derivation='None' name='[none:Calculation_1340665358513999874:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[avg:Default_flag:qk]</rows>
+        <cols>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[none:Calculation_1340665358513999874:qk]</cols>
+        <show-full-range>
+          <column>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[Log CS at Origination (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{7358F532-68B8-405F-924A-55E4B3361A2E}' />
+    </worksheet>
+    <worksheet name='Map'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Geographic Defaults&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_MSA_credit (nk_fannie_mae)' name='federated.1ipwa2c0g2jblh12wz7gl1khvmpf' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ipwa2c0g2jblh12wz7gl1khvmpf'>
+            <column caption='Default flag' datatype='integer' name='[Default_flag]' role='measure' type='quantitative' />
+            <column caption='MSA Name' datatype='string' name='[MSA_Name]' role='dimension' type='nominal' />
+            <column caption='Metropolitan Statistical Area MSA' datatype='string' name='[Metropolitan_Statistical_Area_MSA]' role='dimension' semantic-role='[CMSA].[Name]' type='nominal' />
+            <column-instance column='[Default_flag]' derivation='Avg' name='[avg:Default_flag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MSA_Name]' derivation='None' name='[none:MSA_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Metropolitan_Statistical_Area_MSA]' derivation='None' name='[none:Metropolitan_Statistical_Area_MSA:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[avg:Default_flag:qk]' included-values='in-range'>
+            <min>0.0050000000000000001</min>
+            <max>0.1981566820276498</max>
+          </filter>
+          <slices>
+            <column>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[avg:Default_flag:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[Longitude (generated)]' field-type='quantitative' max='-5121438.7901174556' min='-13697665.7510636' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[Latitude (generated)]' field-type='quantitative' max='7357500.71557476' min='2527083.454884009' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[avg:Default_flag:qk]' />
+              <text column='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[none:MSA_Name:nk]' />
+              <lod column='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[none:Metropolitan_Statistical_Area_MSA:nk]' />
+              <geometry column='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[Latitude (generated)]</rows>
+        <cols>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{3158D715-0F5B-4793-A63F-7B768ADEA7F5}' />
+    </worksheet>
+    <worksheet name='Reg CS'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_MSA_credit (nk_fannie_mae)' name='federated.1ipwa2c0g2jblh12wz7gl1khvmpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ipwa2c0g2jblh12wz7gl1khvmpf'>
+            <column caption='Borrower Credit Score at Origination' datatype='real' name='[Borrower_Credit_Score_at_Origination]' role='measure' type='quantitative' />
+            <column caption='Default flag' datatype='integer' name='[Default_flag]' role='measure' type='quantitative' />
+            <column-instance column='[Default_flag]' derivation='Avg' name='[avg:Default_flag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Borrower_Credit_Score_at_Origination]' derivation='None' name='[none:Borrower_Credit_Score_at_Origination:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[none:Borrower_Credit_Score_at_Origination:qk]' included-values='in-range'>
+            <min>600.0</min>
+            <max>850.0</max>
+          </filter>
+          <slices>
+            <column>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[none:Borrower_Credit_Score_at_Origination:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[avg:Default_flag:qk]</rows>
+        <cols>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[none:Borrower_Credit_Score_at_Origination:qk]</cols>
+      </table>
+      <simple-id uuid='{A065124B-E1CD-4C36-BD48-CFD1D0055FDC}' />
+    </worksheet>
+    <worksheet name='Sellers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_MSA_credit (nk_fannie_mae)' name='federated.1ipwa2c0g2jblh12wz7gl1khvmpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ipwa2c0g2jblh12wz7gl1khvmpf'>
+            <column caption='Default flag' datatype='integer' name='[Default_flag]' role='measure' type='quantitative' />
+            <column caption='Seller Name' datatype='string' name='[Seller_Name]' role='dimension' type='nominal' />
+            <column-instance column='[Default_flag]' derivation='Avg' name='[avg:Default_flag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Seller_Name]' derivation='None' name='[none:Seller_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Default_flag]' derivation='Sum' name='[sum:Default_flag:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[none:Seller_Name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[avg:Default_flag:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[avg:Default_flag:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[sum:Default_flag:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[avg:Default_flag:qk] + [federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[sum:Default_flag:qk])</rows>
+        <cols>[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[none:Seller_Name:nk]</cols>
+      </table>
+      <simple-id uuid='{3956D115-1CB0-40C9-8BED-147639835794}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='0.833333' source-height='30'>
+    <window class='worksheet' name='Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='118'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[avg:Default_flag:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1ipwa2c0g2jblh12wz7gl1khvmpf].[avg:Default_flag:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6084E38C-E662-4BB9-9A53-366ADE42CDC1}' />
+    </window>
+    <window class='worksheet' name='By State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{0F6B6DE5-0FA6-4E10-BB31-57A86CEF1B24}' />
+    </window>
+    <window class='worksheet' name='Default by Cat.'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F6A24DE7-E5B2-48B0-B75B-84FB6279ED2D}' />
+    </window>
+    <window class='worksheet' name='Binned CS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E327BF5A-86B9-4611-900E-7C60E84D0B1A}' />
+    </window>
+    <window class='worksheet' name='Log CS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{39B35195-3AE4-4EB4-821A-CC0B6943A00E}' />
+    </window>
+    <window class='worksheet' name='Reg CS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CE7C189E-458B-457A-AEA9-4EDDA1CCAA8B}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Borrowers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C6482F30-BF08-426B-98D1-645701925E41}' />
+    </window>
+    <window class='worksheet' name='Interest'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{EB425C84-CFE2-49E7-ACD9-0219D12C9736}' />
+    </window>
+    <window class='worksheet' name='Sellers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7036EA8D-632E-452E-AB3A-FB40B590514C}' />
+    </window>
+    <window class='worksheet' name='First Buyer'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DFB6A086-8936-43DB-A819-F3700C814C04}' />
+    </window>
+  </windows>
+</workbook>
